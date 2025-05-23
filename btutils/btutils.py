@@ -876,8 +876,4 @@ class Backtest(_pd.Series):
 
 
 if __name__ == "__main__":
-    df = _pd.read_pickle("/Users/darel/Downloads/signal_df.pkl")
-    bt = Backtest(df["ret"])
-    bm = Backtest(df["futures_chg"])
-    path = "/Users/darel/Downloads/md/"
-    print(bt.stats.best())
+    pass
