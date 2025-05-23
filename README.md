@@ -1,6 +1,6 @@
 # BTUtils
 
-[![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)](https://www.python.org/)
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
@@ -63,7 +63,7 @@ The library consists of three main classes:
 
 ## Requirements
 
-- Python 3.13+
+- Python 3.7+
 - pandas
 - numpy
 - matplotlib

@@ -249,20 +249,20 @@ class Stats:
         var = self.var(confidence)
         cvar = self.data[self.data <= var].mean()
         return cvar if not _np.isnan(cvar) else 0
-    
+
     def r2(self, benchmark):
         benchmark = benchmark.loc[benchmark.index.isin(self.parent.index)]
         _, _, r, _, _ = _linregress(self.data, benchmark)
-        return r ** 2
-    
-    def best(self, freq="D", num=1,compounded=True):
+        return r**2
+
+    def best(self, freq="D", num=1, compounded=True):
         res = self.parent.to_return(freq, compounded)
         res = res.reset_index()
         res.columns = ["datetime", "return"]
         res = res.sort_values(by="return", ascending=False)
         res = res.head(num).reset_index(drop=True)
         return res
-    
+
     def worst(self, freq="D", num=1, compounded=True):
         res = self.parent.to_return(freq, compounded)
         res = res.reset_index()
