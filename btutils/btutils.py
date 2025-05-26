@@ -405,6 +405,7 @@ class Plots:
                 ax.set_xticks(positions)
                 ax.tick_params(**PLOT_STYLE["tick"])
                 ax.set_xticklabels(labels, **PLOT_STYLE["ticklabel"]["x"])
+                ax.set_yticklabels(ax.get_yticks(), **PLOT_STYLE["ticklabel"]["y"])
             ax.yaxis.set_major_formatter(
                 _plt.FuncFormatter(PLOT_STYLE["axis"]["formatter"][yformat])
             )
@@ -481,6 +482,7 @@ class Plots:
         positions, labels = get_positions(res, freq)
         ax.set_xticks(positions)
         ax.set_xticklabels(labels, **PLOT_STYLE["ticklabel"]["x"])
+        ax.set_yticklabels(ax.get_yticks(), **PLOT_STYLE["ticklabel"]["y"])
         ax.tick_params(**PLOT_STYLE["tick"])
         ax.yaxis.set_major_formatter(
             _plt.FuncFormatter(PLOT_STYLE["axis"]["formatter"]["pct0"])

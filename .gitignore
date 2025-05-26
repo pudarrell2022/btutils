@@ -71,3 +71,4 @@ coverage.xml
 *.pkl
 
 # Add project specific ignore files
+test.py
