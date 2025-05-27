@@ -3,6 +3,9 @@ BTUtils - A lightweight Python library for backtesting analysis and visualizatio
 """
 
 __version__ = "0.1.2"
+__author__ = "Darrell"
+__email__ = "pudarrell@gmail.com"
+__license__ = "MIT"
 
 from .btutils import Backtest, Stats, Plots
 
