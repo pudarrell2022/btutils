@@ -757,6 +757,14 @@ class Plots:
 
 class Backtest(_pd.Series):
     def __init__(self, data, name=None):
+        if not isinstance(data, _pd.Series):
+            raise TypeError("The input data must be a pandas Series type.")
+
+        if not _pd.api.types.is_datetime64_any_dtype(data.index):
+            raise TypeError(
+                "Input data must have a datetime type index, representing single-period return data."
+            )
+
         super().__init__(data)
         self.name = name if name is not None else "Strategy"
         self.start_date = data.index.min()
