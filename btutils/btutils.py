@@ -19,7 +19,7 @@ PLOT_STYLE = {
     "figure": {
         "dpi": 100,
         "facecolor": COLOR_SCHEME["background"],
-        "figsize": (12, 6),
+        "figsize": (12, 7),
     },
     "title": {
         "fontname": "Arial",

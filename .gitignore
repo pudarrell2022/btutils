@@ -25,7 +25,10 @@ venv/
 env/
 ENV/
 .venv/
+.env
 .env/
+.env.*
+!.env.example
 
 # Log and temp files
 *.log

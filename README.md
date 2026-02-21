@@ -1,5 +1,7 @@
 # BTUtils
 
+[English](README.md) | [中文](README.zh-CN.md)
+
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
